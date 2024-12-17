@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-Дүкен | Негізгі бет</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8f4; /* Пастелді жасыл фон */
+            color: #333;
+        }
+        header {
+            background-color: #a8d5ba; /* Пастелді жасыл */
+            color: #ffffff;
+            text-align: center;
+            padding: 2em 1em;
+            font-size: 1.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #92c7a3; /* Жұмсақ жасыл */
+            padding: 1em 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .discount-banner {
+            text-align: center;
+            background-color: #cdeacd; /* Ашық пастелді жасыл */
+            color: #004d33;
+            padding: 1.5em;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .product-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .product-card {
+            background-color: #f0f8f0; /* Нәзік жасыл */
+            border: 2px solid #b6d7b9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .product-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #2d6a4f;
+        }
+        .product-card p {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #a8d5ba;
+            color: #004d33;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Интернет-Дүкен</h1>
+        <p>Сапалы кітаптар мен тамаша ұсыныстар!</p>
+    </header>
+
+    <nav>
+        <a href="new.html">Жаңа өнімдер</a>
+        <a href="reviews.html">Пікірлер</a>
+        <a href="stock_products.html">Қоймадағы өнімдер</a>
+
+    </nav>
+
+    <section class="discount-banner">
+        30% ЖЕҢІЛДІКТЕГІ КІТАПТАР!
+    </section>
+
+    <section class="product-section">
+        <div class="product-card">
+          <a href="seven.html">
+            <img src="data:image/jpeg;base64,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" alt="Абай жолы І том">
+            <h3>Абай жолы І том</h3>
+            <p>Автор: Мұхтар Әуезов</p>
+            <p>Бағасы: 3000 тг</p>
+        </div>
+
+        <div class="product-card">
+           <a href="nine.html">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd7GmLS_Vi3VCjdN_3OewZaEUoeJQcitBijA&s" alt="Магия утра">
+                 <h3>Магия утра</h3>
+                    <p>Автор: Хэл Элрод</p>
+                      <p>Бағасы: 2500 тг</p>
+                          </div>
+
+        <div class="product-card">
+          <a href="eight.html">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QERAPEBAQEBMPEBUQERAQEhUaFRATFRUWGBYXFhoYHygsJBslGxgXIT0hJzUrLi4uGCszODMvOCgtLisBCgoKDg0OGBAQGC0gHSUvLSstLS0rMS4uNy4yKy4rKzU3LS0tKy0tLSstLTctKy0tLS0tMjc3Ky0tLS01LS0tN//AABEIARAAuQMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQMEBQIGB//EAD4QAAICAQMBBgMECQIFBQAAAAECAAMRBBIhMQUTIkFRYTJxgSNCUpEUM2JygpKhscEGFVNjk7LwVIPR4fH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EAB8RAQADAAIDAAMAAAAAAAAAAAABAhEDQRITMSFR8P/aAAwDAQACEQMRAD8A/RIiJt60SYiAkSYgJEmICREmAiIgREmICJEmAiJECYkSYESYiBEmJECYiICIiAiIgIiICIiAiIgIiYtVTaXDITgBMeMgAqxL7gOu5cDzxjygbYnPrq1QIBsQrhctjx5DktjjHKcT1TTcVItYHNoYFGIIrwOMqB55/OBuiciujWBdosUYUKC5DH9Wo3Dw5zv3HknP9J7NOtz+srxvXGPwbmLZ8PXBC/wA+ZgdSJzu51e4fa1lePu9fGc8fu4HXy+siunV8brEPw5wAMeufCcj8uoHGMsHSiIgIiICIiAiIgIiICIiAiIgIiICIiAkSYgIiICRJiBEmIgIiICIiAiIgJEmfn/bHbp0Wu7TZKzZa+n0xQbWKoqI5eyzb9xdw+efqBMvv8yZxf8ATXZNdKG/vBqLtSBZbqzjN2RkbfSsDoo8p47T12ofVJotM9dRFB1N1zpv2oX2IqLkDJIPJ6AQO7E+R7T7d1mlqrr1Daeq63UvSuqf9T3Kru74oG4OCF2Ejxe0w2f6uda9ai6mjVtVpe/o1GnUDBLisq6ZI3KWVh6gxqa+3t1FaFFd0VrDtRWYAu2CcKD1OATgektnxGi0VnZ9mnvto0jDUWJp7LVVzqaXt4Uvc7HeC2AcBevAxxKtT/q52OosTW6LT9zY6U6W5cveKyRl23DbvIOMDgYjTX3kTL2XrV1FNN6ggXVJaAeo3qDj6ZmqFIiICIiAiIgIiICIiAiIgIiICcfR9luus1uofYa9TVRWo6n7NXDhgR0OR65nYiBw/wDTvZV2ka6gMraXdv02WPeU7jlqyMfADkg5z+c99p9k3G9NXpra67VqNDrchau2otuAO0gghsnPvOzED5uz/Tl5Stzqt2rq1DalbnQmoF12NUKy3FW3jAOcjMu/2S69NQusvDjUU9wKtOrJXUvJ3KGJzZnB3H0AnX1GpCNWpBPevsGPI7SefylduvRGsVsgVVi1m8sEkYHvxDUUmenIXsXV2tQNXqarK9NYtoWqlka+xPga0liBg84HUzwOwtZV31Wl1NVdN9j2DfSWt05sOXFZDAHkkjI4z5zq1dotlA9L1i3itmK8nGQGx0JEJ2qh2gqysbe6ZGxms4Y5PtgdYX1W/TZp6tiKmWbYoXc5yzYGMsfMn1lk547UUr3gRthtWpG48e443D9nM0W6pVsFZ4yjWbvIBSM5/ODwtHTRE5q9rcK7VOtTkBbSV8zhSVzkA+s6UJas1+kREMkREBERAREQEREBERAREQEREDn9qaU2mgYJVbcvg4wNjDOQfXHSY9R2SSdQlYIWyhQrMxOXDE4yST6TuRDrXltWMj+/OuFTpctWf0e1djB3NtrEAr+Abzk58+k8ajsp7mS21Tmy0BkBH2VIVsA+pzjn3n0ERjXvtE7DiXaW5qhQylu7urAcEDvKgRz14IHBllvZQ7zCBgr0WVsxZjgttA+In3nXiE91unEsS6yldMaWU4RHsJXYFUjLLg5JOOmPOduIhi1/LoiIhgiIgIiICIiAiIgIiICIiAiIgIiICIiBBOOTxjzPlM2hJYNac/aEFFOfDWPh49Ty3r4seUx6yw32V0JjuiWa5v8AiomM1r7bigJ6EEr6460BERAREQEREBERAREQEREBERAREQEyWuzua1YoqAGxxjOTyEGQQOOSfQjHXI1zi2XfGo87bC/vhiqj+VVhqtfKcW2ui/q7Lg3qXZ1PzDk8fLB9xLNH2orHu7B3bgZx91h+JT6ex6fUE4JXdUG2noVYMCOo9R8iMj6ya9Hprj6SJytHqyvhblf+3/6m/UXhF3dc/D7y64WpMTihrVW5yx6U149fE1ucfyj8pk1XbJB2ou5jyF88erHyHv7cZPE5faD2NZ9m47x0AbcudignD9eMZbA8/oZfptOK1wCSScszHLO3mzH1/t0HAk11rxR211aqwnNrsM/dqwqr+YJP5/QTYLGr2sXNtbEDcQN1ZJwCdoAK5wOmR1ORnHNm2kg03K3whGz+6VOf8xCcvHERsOnEyfpeMJg2WbRuRMZUkD4icBfqefLMk6l1+OpgPxVnfj5gYb8gZXBqiZ6tZUxCixdx+4Th/wCU8zRAREQEREBERAREQEREBPm7223OD0tckH0cDBH1UA/Q+0+knE7U0wJZT0fxAjqDnOR7g8yS7cP1VEo09xz3b8OBnjpYv4l/yPI+xBN8j0kkk9M9OntIiBXp6QgwOSeWY9XbzJ9//wAHEsiICXhM02Lz9sVp4ODhztYj5KSfpKQCeByTwJrtcI9a4LGobgo62XOGChfkveE56AgniWHHmtlcarHWkKlaDcxOyteNx6sxPkBnJbnr5kgGtdVbuNfd1hgN2DawDLn4k8HI8jnBB9iCbtNQVy7kNY/xEdAB0Vf2R/Xr5z3fQrgBs8HKsDhlPqpHT/PTpK8zh9ual0sXe6BLFXKhwLKdm471z1PLNnHPdhcc4OnsvtjcVpu/WBVJsVcVuSzV+vhO9GGDxnHPiAnrW6KwhwWdt6Gs20kLaF5A3I2VYjJOeCPITl9ldkOX23VlVSh60sA+JWtyCQw4ZhuJQ54POcyI+qiVaaooiIWZyqhd7/E2B1PvLZVIiRAmIiAiIgJRbq0VtniZsZKopYqPVsdM+/XHHQzg9p33uQlytUrHC1pYcuSwStSa+cMWyTkYVW443SrswGtMadkXOGYChmstDLvVtyAhR4toypGVPvCa+g/TV8kuP/s2D+4leouUj7Su1FH3yoIX3O0kge5GPWSGNYV7LiFPVbgmckcAFAOc/PMr/S7Qwco4qJ+9X4gPI+Fiw9eV+e2F3GHW6PIHOQfFXahHBxwyn5fQg+Ymei452PgPjII+GwfiX/K+XuME9+rT1YJQDbb4vCfC2edwA4yc5yOs52u7MJGMFgDkEfEp8iPf3EmPTTk379URM9dxUhLOp4R/Kz29m9vPqPMDRI7RJJAhVJIA5J6TcqCrAA7y1hlVzgAeZJ8lHr9Bk8Qxe8Vh58NADPy5BKrnoAPESfIAdWPA+oB9dj6c7f0iwfa3gWN/ywwXCLnoAAoPmSvPQYx9qabcBpi299UVXUPjGasnKKPJSoswvorZJOSe7NPJMzadkiIhCIiAiIgIiICIiAiIgczX9nO7targlUTuq2GFFtbMyszDPB3EdPOeOzOxFpTaLLfFhnRbCF3keLaQAwXOTjOOek60QYop0lSHKVop82CjcfmesviIGN6WrJeoZBO56hjxE9WTPRvbofY8zRRcrqGU5B/oRwQQehB4weRLJlu07BjbVgMfjQ8Lbjjn0bHG76HIxgPGu7PS0EYHPX0P5efvOZTprVYVWdTnu7CRiwDqD+2B5eY5HmB29PqFsBK5yDtZTwyN6MPX++cjIIMm+lXG1hkcHqQQRyCCOQR6jmTG45LQwouwlK8PaR4mPwVA+bY/ovU+w5F+FoRmO52JG5jjfa54UfUnAHAGfKX0Uqg2qMDOepJJPUknkk+p5mfT/auLeqJkU/tHo1n15A9sn73FZmZmdlVpKT3uWOWVN7kdO8s4AX2REI+T56kzozL2dyrWf8ZzYPdeFQ/VFU/WaoQiIgIiICIiAiIgIiICIiAiIgIiICIiBn1Gm3Hep2WAYDgZyPwuPvL7e/BB5nmvV8hLB3bk4HOUsP7Dev7JweOmOZqniytWBVgGVhgqwyCPcGBn1h3kUAkbhutI6rXyMfNiCPkGPUCetcxWtgvhLYrTH3WchFPyGc/SWUadUBCjGTkkkkk4A5JJPQAfSVXeK2tfKsNafnjYgPz3Of4YGhECgKBgKAAPQDgCeoiAiIgIiICIiAiIgIiICIiAiIgIiZrddWr92xw2zvD6BPFlj7Db/UQNMTMddVnG8E84C5JOCqnAHuyj6yf0yvBbcMBtp4PUDPT5c/LnpA0RKLdXWpIZsYAPRsYOfPHoGPyUnyM9U6lHJCMrFeSAenLLz9VYfSBbMuj8TW2fifYv7teVx/P3h+s0k459OZn7NGKas9TWpPuxAJP5kwNMREBERAREQEREBERAREQEREBERATDrbaAxWwAtsDYx93LIOfm7D+L0m6ZL7ajYtLqGZwCAVBGMOQTn91vzgVaV9MxLoozuTLbSDl2BX+pB+spW7SBSoyFzu+/17vPB/cGMfSeU7So2HdTtXaTtCqR3agMpYDgZ3DjnGfKWV6rTrlRUVwMNisHG0lNp256DPtiEen1Wms6jcOFLYIAwAMZ9PtcfxEHzmrT6eoeOsAb/ESh4fI4Jx16yldRQyEhAwBCFNoySWCgYOBgkDnpx7Sv/dk4VEYgEDOAqqg3AsPUDaRgc/TmFdKZOzDisV+dP2JH7uNp+q7W/ilmj1S2ruUEDOPEOegP9iJ41NTA97WMsBh0yB3qjoAT0YZOCeOSD1yA1RK6LlddynI6dMEEdQQehHoZZAREQEREBERAREQEREBERAREQEjHn/5/5yZMQKn06EEFFwd2eB94Yb856WpR0VRgbRgDgenynuIHg1LgjauG6jAwfnHdL12r1DdB1HQ/Oe4gQAB04kxEDLfpznvKiFf7wPw2gdA2Oh9GHI9xxPen1IclcFXX4q26j3919xx9ciXynUadXxuHKnKsDhkPqpHT/PQwLomQd+v4Lh6nwPj8iCf5RPQ1TedNw/6Z/wC1zAi2yw2GtGVNqByWUtuLFgAPEOBt5/eHSUrdqCrue6q2bhhlY7tmQWJ3DCkgkdeOfPAjVvY21q6bN6Z2s3dhSDjcrZbO04HQHBAPOMGt7Wc7b1etQeakR3D4PG+xRjafw8e+RkQjpVPuVWwRuAOD1GR0M9zKddX/AMw/Km0/2WO/sb4KiP27SFH0UZOfYhfnCtUx/wC6ab/1FH/VT/5k/oW79cxt/Yxisfwef8RaaoExEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARIkwEREBERAREQEREBERA/9k=" alt="К себе нежно">
+            <h3>К себе нежно</h3>
+            <p>Автор: Ольга Примаченко</p>
+            <p>Бағасы: 4000 тг</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Интернет-Дүкен. Барлық құқықтар қорғалған.</p>
+    </footer>
+</body>
+</html>

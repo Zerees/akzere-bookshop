@@ -1,0 +1,151 @@
+<html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Қоймадағы өнімдер</title>
+    <style>
+        /* Жалпы стильдер */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f8f5; /* Пастелді жасыл фон */
+            color: #333;
+        }
+
+        /* Жоғарғы мәзір */
+        header {
+            background-color: #a8d5ba;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 15px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: #88c7a1;
+        }
+
+        nav a:hover {
+            background-color: #76b38d;
+        }
+
+        /* Негізгі мазмұн */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4f8b65;
+            margin-bottom: 20px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            margin-top: 0;
+            color: #4f8b65;
+        }
+
+        footer {
+            background-color: #a8d5ba;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Жоғарғы мәзір -->
+    <header>
+        <h1>Қоймадағы өнімдер</h1>
+        <nav>
+            <a href="index.html">Басты бетке</a>
+        </nav>
+    </header>
+
+    <!-- Негізгі мазмұн -->
+    <main>
+        <section>
+            <h2>Қоймада бар өнімдер</h2>
+            <div class="product-container">
+                <!-- Өнім 1 -->
+                <div class="product">
+                    <a href="one.html">
+                        <img src="https://content.img-gorod.ru/pim/products/images/43/d0/018f5dfa-4772-7050-9744-09edb6e743d0.jpg?width=135&height=135&fit=bounds" alt="Убийство по алфавиту">
+                        <h3>Кітап: Убийство по алфавиту</h3>
+                    </a>
+                    <p><strong>Автор:</strong> Агата Кристи
+                    <p><strong>Бағасы:</strong> 1500 ₸</p>
+                </div>
+                <!-- Өнім 2 -->
+                <div class="product">
+                    <a href="two.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjuo1KRmQ8E5U1tc8aowprrdg28brDWZfPmw&s" alt="Не тупи кітабы">
+                        <h3>Кітап: Не тупи</h3>
+                    </a>
+                    <p><strong>Автор:</strong> Джек Синсеро </p>
+                    <p><strong>Бағасы:</strong> 3490 ₸</p>
+                </div>
+                <!-- Өнім 3 -->
+                <div class="product">
+                    <a href="three.html">
+                        <img src="https://i0.wp.com/knigivkoree.com/wp-content/uploads/2020/11/london-dzhek-martin-iden-e1636877056867.jpg?fit=600%2C626&ssl=1" alt="Мартин Иден">
+                        <h3>Кітап: Мартин Иден</h3>
+                    </a>
+                    <p><strong>Автор:</strong> Джек Лондон</p>
+                    <p><strong>Бағасы:</strong> 1500 ₸</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Төменгі бөлім -->
+    <footer>
+        <p>&copy; 2024 Интернет дүкен. Барлық құқықтар қорғалған.</p>
+    </footer>
+</body>
+</html>

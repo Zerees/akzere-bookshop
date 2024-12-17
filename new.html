@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>жаңа өнімдер</title>
+    <style>
+        /* Жалпы стильдер */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f8f5; /* Пастелді жасыл фон */
+            color: #333;
+        }
+
+        /* Жоғарғы мәзір */
+        header {
+            background-color: #a8d5ba;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 15px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: #88c7a1;
+        }
+
+        nav a:hover {
+            background-color: #76b38d;
+        }
+
+        /* Негізгі мазмұн */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4f8b65;
+            margin-bottom: 20px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            margin-top: 0;
+            color: #4f8b65;
+        }
+
+        footer {
+            background-color: #a8d5ba;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Жоғарғы мәзір -->
+    <header>
+        <h1>Жаңа өнімдер</h1>
+        <nav>
+            <a href="index.html">Басты бетке</a>
+        </nav>
+    </header>
+
+    <!-- Негізгі мазмұн -->
+    <main>
+        <section>
+            <h2>Дүкенге келген жаңа өнімдер</h2>
+            <div class="product-container">
+                <!-- Өнім 1 -->
+                <div class="product">
+                    <a href="four.html">
+                        <img src="https://simg.marwin.kz/media/catalog/product/cache/8d1771fdd19ec2393e47701ba45e606d/f/u/fullimage5_771.jpg" alt="Ақиқат айнасы">
+                        <h3>Кітап: Ақиқат айнасы</h3>
+                    </a>
+                    <p><strong>Автор:</strong> Шәкәрім Құдайбердіұлы </p>
+                    <p><strong>Бағасы:</strong> 2500 ₸</p>
+                </div>
+                <!-- Өнім 2 -->
+                <div class="product">
+                    <a href="five.html">
+                        <img src="https://resources.cdn-kaspi.kz/img/m/p/h27/h65/82991720366110.jpg" alt="Оян, қазақ! кітабы">
+                        <h3>Кітап: Оян, қазақ!</h3>
+                    </a>
+                    <p><strong>Автор:</strong> Міржақып Дулатов</p>
+                    <p><strong>Бағасы:</strong> 2000 ₸</p>
+                </div>
+                <!-- Өнім 3 -->
+                <div class="product">
+                    <a href="six.html">
+                        <img src="https://adebiportal.kz/storage/tmp/resize/books/350_0_f7728c4a593ea0449a3720e8d8ee735c.jpg" alt="Қара сөздер кітабы">
+                        <h3>Кітап: Қара сөздер</h3>
+                    </a>
+                    <p><strong>Автор:</strong> Абай Құнанбайұлы</p>
+                    <p><strong>Бағасы:</strong> 1500 ₸</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Төменгі бөлім -->
+    <footer>
+        <p>&copy; 2024 Интернет дүкен. Барлық құқықтар қорғалған.</p>
+    </footer>
+</body>
+</html>

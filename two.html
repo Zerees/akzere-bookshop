@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Джек Синсеро: Не тупи</title>
+    <style>
+        /* Жалпы стильдер */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f8f5; /* Пастелді жасыл фон */
+            color: #333;
+        }
+
+        /* Жоғарғы бөлім */
+        header {
+            background-color: #a8d5ba; /* Пастелді жасыл */
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Негізгі мазмұн */
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .book-container img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        .book-details {
+            flex: 1;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .book-details h2 {
+            color: #4f8b65;
+            margin-bottom: 10px;
+        }
+
+        .book-details p {
+            margin: 10px 0;
+        }
+
+        .book-details .price {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .book-details .buy-btn {
+            display: inline-block;
+            background-color: #88c7a1;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .book-details .buy-btn:hover {
+            background-color: #76b38d;
+        }
+
+        footer {
+            background-color: #a8d5ba;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Жоғарғы бөлім -->
+    <header>
+        <h1>Джек Синсеро: Не тупи</h1>
+    </header>
+
+    <!-- Негізгі мазмұн -->
+    <main>
+        <div class="book-container">
+            <!-- Сурет -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjuo1KRmQ8E5U1tc8aowprrdg28brDWZfPmw&s">
+            
+            <!-- Кітаптың сипаттамасы -->
+            <div class="book-details">
+                <h2>Джек Синсеро</h2>
+                <p><strong>Жанр:</strong> Өзін-өзі дамыту</p>
+                <p><strong>Түпнұсқа атауы:</strong> You Are a Badass</p>
+                <p><strong>Сипаттама:</strong> 
+                    Бұл кітап сіздің ішкі әлеуетіңізді ашуға және өзіңіздің ең жақсы нұсқаңыз болуға арналған. 
+                    Джек Синсеро қарапайым әрі мотивациялық тілмен оқырмандарды өз армандарын орындауға шабыттандырады. 
+                    «Не тупи» — кез келген қиындықты жеңуге көмектесетін құралдар жинағы.
+                </p>
+                <p class="price"><strong>Бағасы:</strong> 4200 ₸</p>
+                <a href="https://example.com/buy_dont_be_stupid" class="buy-btn">Сатып алу</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Төменгі бөлім -->
+    <footer>
+        <p>&copy; 2024 Интернет дүкен. Барлық құқықтар қорғалған.</p>
+    </footer>
+</body>
+</html>
